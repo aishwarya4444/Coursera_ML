@@ -12,13 +12,11 @@ figure; hold on;
 %               examples and 'ko' for the negative examples.
 %
 
+y1 = find(y==1);
+y0 = find(y==0);
 
-
-
-
-
-
-
+plot(X(y1,1), X(y1,2), 'k+', 'LineWidth', 2, 'MarkerSize', 7);
+plot(X(y0,1), X(y0,2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
 
 % =========================================================================
 
